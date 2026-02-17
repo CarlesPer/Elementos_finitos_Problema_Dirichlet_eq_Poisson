@@ -1,11 +1,9 @@
 ## 2D Finite Element Method (FEM) Solver
-
 Este repositorio contiene una implementación eficiente en MATLAB del **Método de los Elementos Finitos (FEM)** para resolver problemas de valores en la frontera en abiertos acotados en 2 dimensiones.
 
 El código aborda la ecuación de Poisson con condiciones de frontera de Dirichlet no homogéneas, utilizando una discretización espacial basada en una triangulación $\mathcal{T}$ que nos viene dada y **elementos finitos lineales a trozos ($P_1$ de Lagrange)**.
 
 ## 📋 Descripción del Problema
-
 El código resuelve el siguiente problema con derivadas parciales:
 
 $$
@@ -21,7 +19,6 @@ Donde:
 * $g \in \mathcal{C}(\partial\Omega)$ define las condiciones de frontera **no homogéneas**.
 
 ## 🚀 Características Principales
-
 Esta implementación destaca por su enfoque en la eficiencia computacional y en el rigor matemático:
 
 * **Matrices Dispersas (Sparse Matrixs):** El ensamblaje de la matriz de rigidez ($A$) se realiza utilizando almacenamiento disperso (`sparse`), optimizando el uso de memoria y tiempo de cómputo para mallas finas con gran número de nodos.
@@ -30,7 +27,6 @@ Esta implementación destaca por su enfoque en la eficiencia computacional y en 
 * **Visualización:** Incluye herramientas para visualizar tanto la malla (`triplot`) como la solución numérica que hemos desarrollado (`trisurf`).
 
 ## 🛠️ Estructura del Código
-
 El código se estructura en 4 funciones que hacen tareas específicas importantes y un último script que, con las funciones y mallas dadas resuelve el problema:
 
 # calcula_vertbmp(T)
